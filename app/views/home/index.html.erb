@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+
+    
+
+    <!-- Header Carousel -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <%= link_to image_tag("ssdDesign.jpg", :size => '1900x1080') %>
+                <div class="carousel-caption">
+                    <h2 style="text-align: right"><font size="12">Design</font size></h2>
+                </div>
+            </div>
+            <div class="item">
+                <%= link_to image_tag("ssdManufacture.png", :size => '1900x1080') %>
+                <div class="carousel-caption">
+                    <h2 style="text-align: right"><font size="12">Manufacture</font size></h2>
+                </div>
+            </div>
+            <div class="item">
+                <%= link_to image_tag("ssdEnjoy.png", :size => '1900x1080') %>
+                <div class="carousel-caption">
+                    <h2 style="text-align: right"><font size="12">Display</font size></h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Marketing Icons Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    Welcome to Solid Solutions Design
+                </h1>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-check"></i> Commercial </h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <% link_to "Learn More", home_gallery_path, :class => 'btn btn-default' %>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-gift"></i> Residential </h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <a href="#" class="btn btn-default">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-compass"></i> Clinical </h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <a href="#" class="btn btn-default">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Portfolio Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Gallery</h2>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <%= link_to image_tag("Ulhmann_kitchen (2).png", :class => 'img-responsive img-portfolio img-hover',:size => '700x450') %>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <%= link_to image_tag("Ulhmann_kitchen (2).png", :class => 'img-responsive img-portfolio img-hover',:size => '700x450') %>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <%= link_to image_tag("Ulhmann_kitchen (2).png", :class => 'img-responsive img-portfolio img-hover',:size => '700x450') %>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <%= link_to image_tag("Ulhmann_kitchen (2).png", :class => 'img-responsive img-portfolio img-hover',:size => '700x450') %>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <%= link_to image_tag("Ulhmann_kitchen (2).png", :class => 'img-responsive img-portfolio img-hover',:size => '700x450') %>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <%= link_to image_tag("Ulhmann_kitchen (2).png", :class => 'img-responsive img-portfolio img-hover',:size => '700x450') %>
+            </div>
+            <a href="#" class="btn btn-default">View More</a>
+            <% #link_to "View More", home_gallery_path, :class => 'btn btn-default', :size => '300x150' %>
+        </div>
+        <!-- /.row -->
+
+        <!-- Features Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Our Mission</h2>
+            </div>
+            <div class="col-md-6">
+                <p><strong>Let Us Build Your Dream Business</strong></p>
+                <ul>
+                    <li>Draft</li>
+                    <li>Design</li>
+                    <li>Maufacture</li>
+                    <li>Test</li>
+                    <li>Deliver</li>
+                </ul>
+                <p>Solid Solutions Design is a company that designs and manufactures cabinetry according to clients' needs. Our products are handmade and may be customized per customer request. Whether it is a starting small business or simply remodeling, we are guaranteed to provide quality designs and solutions to satisfy your demands.</p>
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive" src="http://placehold.it/700x450" alt="">
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Call to Action Section -->
+        <div class="well">
+            <div class="row">
+                <div class="col-md-8">
+                    <p><strong>Interested in our Services or Products? Have an inquiry or requesting a quote? Just click this button to get to our contact page!</strong></p>
+                </div>
+                <div class="col-md-4">
+                    <a class="btn btn-lg btn-default btn-block" <%= link_to "Contact Us!", home_contact_path %></a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+</body>
+
+</html>
