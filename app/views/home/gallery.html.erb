@@ -16,9 +16,8 @@
             <div class="col-lg-12">
                 <h1 class="page-header">Gallery</h1>
                 <ol class="breadcrumb">
-                    <li><a href="index.html.erb">Home</a>
-                    </li>
-                    <li class="active">Residential Gallery</li>
+                    <li><%= link_to "Home", root_path %></li>
+                    <li class="active">Gallery</li>
                 </ol>
             </div>
         </div>
@@ -32,10 +31,10 @@
                 </a>
             </div>
             <div class="col-md-5">
-                <h3>Gallery One</h3>
+                <h3>Clinical</h3>
                 <h4>Subheading</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
-                <a class="btn btn-primary" href="portfolio-item.html">View Project</i></a>
+                <a class="btn btn-primary" <%= link_to "View Projects", gallery_clinical_path%> </a>
             </div>
         </div>
         <!-- /.row -->
@@ -50,10 +49,10 @@
                 </a>
             </div>
             <div class="col-md-5">
-                <h3>Gallery Two</h3>
+                <h3>Commercial</h3>
                 <h4>Subheading</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
-                <a class="btn btn-primary" href="portfolio-item.html">View Project</i></a>
+                <a class="btn btn-primary" <%= link_to "View Projects", gallery_commercial_path%> </a>
             </div>
         </div>
         <!-- /.row -->
@@ -68,12 +67,15 @@
                 </a>
             </div>
             <div class="col-md-5">
-                <h3>Gallery Three</h3>
+                <h3>Residential</h3>
                 <h4>Subheading</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
-                <a class="btn btn-primary" href="portfolio-item.html">View Project</i></a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
+                <a class="btn btn-primary" <%= link_to "View Projects", gallery_residential_path%> </a>
             </div>
         </div>
+        <!-- /.row -->
+
+        <hr>
         <!-- /.row -->
 
         <hr>
@@ -87,10 +89,10 @@
                 </a>
             </div>
             <div class="col-md-5">
-                <h3>Gallery Four</h3>
+                <h3>Residential</h3>
                 <h4>Subheading</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
-                <a class="btn btn-primary" href="portfolio-item.html">View Project</i></a>
+                <a class="btn btn-primary" <%= link_to "View Projects", gallery_residential_path%> </a>
             </div>
         </div>
         <!-- /.row -->
