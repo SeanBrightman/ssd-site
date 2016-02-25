@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'products/clinical'
+
+  get 'products/commercial'
+
+  get 'products/residential'
+
+  get 'products/salon'
+
   get 'gallery/commercial'
 
   get 'gallery/residential'
