@@ -21,7 +21,7 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <%= link_to image_tag("ssdDesign.jpg", :size => '1900x1080') %>
+                <%= link_to image_tag("ssdDesign.png", :size => '1900x1080') %>
                 <div class="carousel-caption">
                     <h2 style="text-align: right"><font size="12">Design</font size></h2>
                 </div>
@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div class="item">
-                <%= link_to image_tag("ssdEnjoy.png", :size => '1900x1080') %>
+                <%= link_to image_tag("ssdDisplay.png", :size => '1900x1080') %>
                 <div class="carousel-caption">
                     <h2 style="text-align: right"><font size="12">Display</font size></h2>
                 </div>
@@ -75,6 +75,7 @@
                         <h4><i class="fa fa-fw fa-check"></i><center> Commercial </center></h4>
                     </div>
                     <div class="panel-body">
+                        <%= link_to image_tag("cogallery/ATLBraves1.png", :class => 'img-responsive img-portfolio img-hover',:size => '700x450') %>
                         <p>We have Designed and Manufactured a variety of designs and styles for many commercial sites including restaurants, retails stores, offices, and nail salons.</p>
                         <center><a class="btn btn-default" <%= link_to "Take a Look!", gallery_commercial_path%> </a></center>
                     </div>
@@ -86,6 +87,7 @@
                         <h4><i class="fa fa-fw fa-gift"></i><center> Residential </center></h4>
                     </div>
                     <div class="panel-body">
+                        <%= link_to image_tag("Ulhmann_kitchen (2).png", :class => 'img-responsive img-portfolio img-hover',:size => '700x450') %>
                         <p>While we primarily specialize in Clinical and Commercial fixtures, we do design and manufacture together alongside Joshua Cabinetry for residential designs.</p>
                         <center><a class="btn btn-default" <%= link_to "Take a Look!", gallery_residential_path%> </a></center>
                     </div>
@@ -97,21 +99,13 @@
                         <h4><i class="fa fa-fw fa-compass"></i><center> Clinical </center></h4>
                     </div>
                     <div class="panel-body">
+                        <%= link_to image_tag("clgallery/Clinical (1).png", :class => 'img-responsive img-portfolio img-hover',:size => '700x450') %>
                         <p>Our clinical designs follow that of a basic dentist or doctor's office. While we do keep some of our designs basic, we also like to get creative in our designs!</p>
                         <center><a class="btn btn-default" <%= link_to "Take a Look!", gallery_clinical_path%> </a></center>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6">
-                <%= link_to image_tag("Ulhmann_kitchen (2).png", :class => 'img-responsive img-portfolio img-hover',:size => '700x450') %>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <%= link_to image_tag("Ulhmann_kitchen (2).png", :class => 'img-responsive img-portfolio img-hover',:size => '700x450') %>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <%= link_to image_tag("Ulhmann_kitchen (2).png", :class => 'img-responsive img-portfolio img-hover',:size => '700x450') %>
-            </div>
-            <center><a href="#" class="btn btn-default">View More</a></center>
+            <center><a class="btn btn-default" <%= link_to "View More", home_gallery_path%> </a></center>
         </div>
         <!-- /.row -->
 
