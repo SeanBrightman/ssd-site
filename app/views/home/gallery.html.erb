@@ -27,13 +27,17 @@
         <div class="row">
             <div class="col-md-7">
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/700x300" alt="">
+                    <%= link_to image_tag("clgallery/Cheang DDS (5).png", :class => 'img-responsive img-portfolio img-hover',:size => '700x300') %>
                 </a>
             </div>
             <div class="col-md-5">
                 <h3>Clinical</h3>
-                <h4></h4>
-                <p></p>
+                <h4>This Gallery includes:</h4>
+                <ul>
+                    <li>Dental Offices</li>
+                    <li>Doctor Offices</li>
+                </ul>
+                <p>Most of the projects shown in this gallery are customer inquired. We manufacture most of the clinical office needs.</p>
                 <a class="btn btn-primary" <%= link_to "View Projects", gallery_clinical_path%> </a>
             </div>
         </div>
@@ -45,13 +49,19 @@
         <div class="row">
             <div class="col-md-7">
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/700x300" alt="">
+                    <%= link_to image_tag("cogallery/mallkiosk(1).png", :class => 'img-responsive img-portfolio img-hover',:size => '700x300') %>
                 </a>
             </div>
             <div class="col-md-5">
                 <h3>Commercial</h3>
-                <h4></h4>
-                <p></p>
+                <h4>This Gallery includes: Mall Kiosks, Salons, and Restaurants.</h4>
+                <ul>
+                    <li>Mall Kiosks</li>
+                    <li>Salons</li>
+                    <li>Restaurants</li>
+                    <li>Retail Stores</li>
+                </ul>
+                <p>Some projects from this Gallery were customer inquired. The salons include both custom and stock furniture that we manufacture at our factory.</p>
                 <a class="btn btn-primary" <%= link_to "View Projects", gallery_commercial_path%> </a>
             </div>
         </div>
@@ -63,13 +73,19 @@
         <div class="row">
             <div class="col-md-7">
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/700x300" alt="">
+                    <%= link_to image_tag("rgallery/Ulhmann_kitchen(3).png", :class => 'img-responsive img-portfolio img-hover',:size => '700x300') %>
                 </a>
             </div>
             <div class="col-md-5">
                 <h3>Residential</h3>
-                <h4></h4>
-                <p></p>
+                <h4>This Gallery includes: </h4>
+                <ul>
+                    <li>Home Kitchens</li>
+                    <li>Home Entertainment Centers</li>
+                    <li>Beds</li>
+                    <li>Closet Fixtures</li>
+                </ul>
+                <p>While we manufacture the shelving, the majority of the residential work comes from Joshua Cabinetry. </p>
                 <a class="btn btn-primary" <%= link_to "View Projects", gallery_residential_path%> </a>
             </div>
         </div>
