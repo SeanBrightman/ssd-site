@@ -12,6 +12,8 @@ Rails.application.routes.draw do
   get 'gallery/residential'
 
   get 'gallery/clinical'
+  
+  get 'gallery/kitchens'
 
   root 'home#index'
 
