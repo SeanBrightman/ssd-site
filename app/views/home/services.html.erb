@@ -26,17 +26,16 @@
         <!-- Image Header -->
         <div class="row">
             <div class="col-lg-12">
-                <img class="img-responsive" src="http://placehold.it/1200x300" alt="">
+                <%= image_tag("services/servicebanner.png", :class => 'img-responsive') %>
             </div>
         </div>
         <!-- /.row -->
 
         <!-- Service Panels -->
-        <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
         <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Services</h2>
-            </div>
+        <div class="col-lg-12">
+            <h2 class="page-header">Services</h2>
+        </div>
             <div class="col-md-3 col-sm-6">
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
@@ -45,10 +44,11 @@
                               <i class="fa fa-tree fa-stack-1x fa-inverse"></i>
                         </span>
                     </div>
+                    
                     <div class="panel-body">
                         <h4>Draft</h4>
                         <p>Need help coming up with ideas for your commercial location? We'll set up a consultation meeting to help you draft these ideas.</p>
-                        <a href="service-one" class="btn btn-primary">Learn More</a>
+                        <a href= "#service-one" data-toggle="tab" class= "btn btn-primary"> Learn More </a>
                     </div>
                 </div>
             </div>
@@ -63,7 +63,7 @@
                     <div class="panel-body">
                         <h4>CAD</h4>
                         <p>Our Engineers will put your drafted idea into a CAD program for you to get a better view of what you're building.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <a href= "#service-two" data-toggle="tab" class= "btn btn-primary"> Learn More </a>
                     </div>
                 </div>
             </div>
@@ -78,7 +78,7 @@
                     <div class="panel-body">
                         <h4>Manufacture</h4>
                         <p>Once you've been through the draft and CAD process, we will send the completed file down the line to be manufactured in our facility.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <a href= "#service-three" data-toggle="tab" class= "btn btn-primary"> Learn More </a>
                     </div>
                 </div>
             </div>
@@ -93,107 +93,151 @@
                     <div class="panel-body">
                         <h4>Delivery/Installation</h4>
                         <p>Local customers are offered a delivery service and once the materials are on site, we will also install your products for you.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <a href= "#service-four" data-toggle="tab" class= "btn btn-primary"> Learn More </a>
                     </div>
                 </div>
             </div>
         </div>
 
+
+        
         <!-- Service Tabs -->
         <div class="row">
             <div class="col-lg-12">
 
-                <ul id="myTab" class="nav nav-tabs nav-justified">
-                    <li class="active"><a href="#service-one" data-toggle="tab"><i class="fa fa-tree"></i> Draft</a>
-                    </li>
-                    <li class=""><a href="#service-two" data-toggle="tab"><i class="fa fa-car"></i> CAD</a>
-                    </li>
-                    <li class=""><a href="#service-three" data-toggle="tab"><i class="fa fa-support"></i> Manufacture</a>
-                    </li>
-                    <li class=""><a href="#service-four" data-toggle="tab"><i class="fa fa-database"></i> Delivery/Installation</a>
-                    </li>
-                </ul>
-
                 <div id="myTabContent" class="tab-content">
                     <div class="tab-pane fade active in" id="service-one">
+                    <div class="col-md-6">
                         <h4>Draft/Quote</h4>
-                        <p>Drafting with us includes consultations that involve multiple procedures. You will first meet with the engineer who will be drafting your fixture and finding out exactly what you want to be built. Once this process is complete, the engineer will be sent to the location to take accurate measurements. Once measurements have been recorded the drafting begins and an estimate will be applied. Once the drafting is complete we will send a Quote for the Designing and Manufacturing process to allow you to determine if you would like to proceed with our services.</p>
+                        <p>Drafting with us includes consultations that involve multiple procedures. You will 
+                        first meet with the engineer who will be drafting your fixture and finding out exactly 
+                        what you want to be built. Once this process is complete, the engineer will be sent to 
+                        the location to take accurate measurements. Once measurements have been recorded the 
+                        drafting begins and an estimate will be applied. Once the drafting is complete we will 
+                        send a Quote for the Designing and Manufacturing process to allow you to determine if you 
+                        would like to proceed with our services.</p>
+                    </div>
+                    <div class="col-md-6">
+                    <%= image_tag("services/draft.png", :class => 'img-responsive') %>
+                    </div>
                     </div>
                     <div class="tab-pane fade" id="service-two">
+                    <div class="col-md-6">
                         <h4>CAD</h4>
-                        <p>Using CAD software we will take the draft produced earlier and begin designing the product you requested! This process generally takes a few weeks as we allow precision and accuracy to be our number one priority. Once this process is complete, you will have the option to see your product rendered in digital 3D format for a better look at how it will look in your business or residential area. </p>
+                        <p>Using CAD software we will take the draft produced earlier and begin designing the 
+                        product you requested! This process generally takes a few weeks as we allow precision and 
+                        accuracy to be our number one priority. Once this process is complete, you will have the 
+                        option to see your product rendered in digital 3D format for a better look at how it will 
+                        look in your business or residential area. </p>
+                    </div>
+                    <div class="col-md-6">
+                    <%= image_tag("services/cad.png", :class => 'img-responsive') %>
+                    </div>
                     </div>
                     <div class="tab-pane fade" id="service-three">
+                    <div class="col-md-6">
                         <h4>Manufacture</h4>
-                        <p>The process of manufacturing your product will take place in our own factory. Running through our line of production your product will be fabricated as illustrated by the design generated in the CAD process. Before releasing, your product will be handled by our floor team to ensure quality is met.  </p>
+                        <p>The process of manufacturing your product will take place in our own factory located in Chamblee, Georgia. 
+                        Running through our line of production your product will be fabricated as illustrated
+                        by the design generated in the CAD process. Before releasing, your product will be handled 
+                        by our floor team to ensure quality is met.  </p>
+                    </div>
+                    <div class="col-md-6">
+                    <%= image_tag("services/manufacture.png", :class => 'img-responsive') %>
+                    </div>
                     </div>
                     <div class="tab-pane fade" id="service-four">
+                    <div class="col-md-6">
                         <h4>Delivery/Installation</h4>
-                        <p> Unfortunately we only deliver to local businesses and residential areas. We do however offer various shipping methods depending on the size and weight of your product. If you need the product shipped then we will quote you on shipping before proceeding with the delivery process of your product. Alternatively, you can schedule your own shipment methods such as "Pick-Up" or have it shipped through a preferred carrier of your choice.</p>
+                        <p> Unfortunately we only deliver to local businesses and residential areas. 
+                        We do however offer various shipping methods depending on the size and weight of your product. 
+                        If you need the product shipped then we will quote you on shipping before proceeding with the 
+                        delivery process of your product. Alternatively, you can schedule your own shipment methods such 
+                        as "Pick-Up" or have it shipped through a preferred carrier of your choice.</p>
+                    </div>
+                    <div class="col-md-6">
+                    <%= image_tag("services/delivery.png", :class => 'img-responsive') %>
+                    </div>
                     </div>
                 </div>
-
             </div>
         </div>
 
         <!-- Service List -->
-        <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+        
+        <!-- Service Tabs -->
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="page-header">Additional Services</h2>
-            </div>
-            <div class="col-md-4">
-                <div class="media">
-                    <div class="pull-left">
-                        <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-tree fa-stack-1x fa-inverse"></i>
-                        </span> 
+            <h2 class="page-header">Additional Services</h2>
+
+                <ul id="myTab" class="nav nav-tabs nav-justified">
+                    <li class="active"><a href="#adservice-one" data-toggle="tab"><i class="fa fa-tree"></i> Repairs</a>
+                    </li>
+                    <li class=""><a href="#adservice-two" data-toggle="tab"><i class="fa fa-car"></i> Shipping</a>
+                    </li>
+                    <li class=""><a href="#adservice-three" data-toggle="tab"><i class="fa fa-support"></i> Remodeling</a>
+                    </li>
+                    <li class=""><a href="#adservice-four" data-toggle="tab"><i class="fa fa-database"></i> 3D Rendering</a>
+                    </li>
+                </ul>
+
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active in" id="adservice-one">
+                    <div class="col-md-6">
+                        <%= image_tag("services/repairs.png", :class => 'img-responsive') %>
                     </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Repairs</h4>
+                    <div class="col-md-6">
+                        <h4>Repairs</h4>
+                        <p>Things happen. Whether damaged during shipment or accidently banged up over time, we provide repair
+                        services for furniture that has been purchased from us.</p>
                         <p>Repairs include: delaminating issues, chipped wooden fixtures, scratches, missing parts, broken fixtures.</p>
                     </div>
-                </div>
-                <div class="media">
-                    <div class="pull-left">
-                        <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-car fa-stack-1x fa-inverse"></i>
-                        </span> 
                     </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Shipping</h4>
+                    <div class="tab-pane fade" id="adservice-two">
+                    <div class="col-md-6">
+                        <%= image_tag("services/shipping.png", :class => 'img-responsive') %>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Shipping</h4>
                         <p>Provide us with your address and we will help set up Shipping for your products.</p>
+                        <strong><p>Ground Shipping:</p></strong>
+                        <p>Smaller Packages can be delivered via FedEx Ground or UPS Ground depending on customer preference</p>
+                        <strong><p>Freight Shipping:</p></strong>
+                        <p>Larger Shipments will consist of boxes stacked on pallets. 
+                        A Lift Gate on the back of the freight truck will often be required. 
+                        All Freight Shipments will be considered Curbside and will not be brought inside a business.</p>
                     </div>
+                    </div>
+                    <div class="tab-pane fade" id="adservice-three"> 
+                    <div class="col-md-6">
+                        <%= image_tag("services/remodeling.png", :class => 'img-responsive') %>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Remodeling</h4>
+                        <p>Interested in changing things up a bit? We will head out to your location after multiple consultations to 
+                        remodel your home or business area.</p>
+                        <p>Residential customers will be refered to Joshua Cabinetry for any remodeling inquiries.</p>
+                    </div>
+                    </div>
+                    <div class="tab-pane fade" id="adservice-four">
+                    <div class="col-md-6">
+                        <%= image_tag("services/3Drender.png", :class => 'img-responsive' ) %>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>3D Rendering</h4>
+                        <p> After a Quote and a CAD of the product are completed , we can render a digital model of your 
+                        business to give you a better idea of what the final product will look like in your area or business.</p>
+                        <p>The purpose of this service to to aid you in designing the interior look of your home or business.</p>
+                    </div>
+                    </div>
+                    
                 </div>
-                <div class="media">
-                    <div class="pull-left">
-                        <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-support fa-stack-1x fa-inverse"></i>
-                        </span> 
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Remodeling</h4>
-                        <p>We will head out to your location after multiple consultations to remodel your home or business area.</p>
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="pull-left">
-                        <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-support fa-stack-1x fa-inverse"></i>
-                        </span> 
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">3D Rendering</h4>
-                        <p>After a Quote and completed CAD of the product have been delivered, we will render a digital model of your business to give you a better idea of what the final product will look like in your area or business.</p>
-                    </div>
-                </div>
+
             </div>
-            
         </div>
+
+        <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+        
         <!-- /.row -->
 
         <hr>
@@ -209,6 +253,7 @@
 
     <!-- Auto Scroll for Services -->
     <script src="js/service_scroll.js"></script>
+    
 
 </body>
 
