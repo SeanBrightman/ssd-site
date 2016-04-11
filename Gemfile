@@ -15,6 +15,7 @@ gem 'coffee-rails', '~> 4.1.0'
 #gem 'spree_core', '~> 3.0', '>= 3.0.4'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+gem 'nokogiri', '1.6.7.2'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
