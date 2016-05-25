@@ -6582,4 +6582,10 @@ button.close {
     display: none !important;
   }
 }
+
+/*additional custom css*/
+.nav-font{
+font-size: 20px;
+line-height: 90px;
+}
 /*# sourceMappingURL=bootstrap.css.map */
