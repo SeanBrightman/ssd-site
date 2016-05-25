@@ -18,8 +18,8 @@
                 </h1>
                 <ol class="breadcrumb">
                     <li><%= link_to "Home", root_path %></li>
-                    <li><%= link_to "Commercial Gallery", gallery_commercial_path %></li>
-                    <li class="active">Mall Kiosks</li>
+                    <li><%= link_to "Residential Gallery", gallery_residential_path %></li>
+                    <li class="active">Kitchens</li>
                 </ol>
             </div>
         </div>
@@ -45,28 +45,28 @@
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
                         <div class="item active">
-                            <%= link_to image_tag("rgallery/kitchens/Ulhmann_kitchen750x500(1).png") %>
+                            <%= image_tag("cogallery/kiosks/mallkiosk(1).png") %>
                         </div>
                         <div class="item">
-                            <%= link_to image_tag("rgallery/kitchens/Ulhmann_kitchen750x500(2).png") %>
+                            <%= image_tag("cgallery/kiosks/mallkiosk(2).png") %>
                         </div>
                         <div class="item">
-                            <%= link_to image_tag("rgallery/kitchens/Ulhmann_kitchen750x500(3).png") %>
+                            <%= image_tag("cgallery/kiosks/mallkiosk(3).png") %>
                         </div>
                         <div class="item">
-                            <%= link_to image_tag("rgallery/kitchens/Ulhmann_kitchen750x500(4).png") %>
+                            <%= image_tag("cgallery/kiosks/mallkiosk(4).png") %>
                         </div>
                         <div class="item">
-                            <%= link_to image_tag("rgallery/kitchens/rkitchen(1).png") %>
+                            <%= image_tag("cgallery/kiosks/mallkiosk(5).png") %>
                         </div>
                         <div class="item">
-                            <%= link_to image_tag("rgallery/kitchens/rkitchen(2).png") %>
+                            <%= image_tag("cgallery/kiosks/mallkiosk(6).png") %>
                         </div>
                         <div class="item">
-                            <%= link_to image_tag("rgallery/kitchens/rkitchen(3).png") %>
+                            <%= image_tag("cgallery/kiosks/mallkiosk(7).png") %>
                         </div>
                         <div class="item">
-                            <%= link_to image_tag("rgallery/kitchens/rkitchen(4).png") %>
+                            <%= image_tag("cgallery/kiosks/mallkiosk(8).png") %>
                         </div>
                     </div>
 
@@ -81,65 +81,22 @@
             </div>
 
             <div class="col-md-4">
-                <h3>Kitchens</h3>
-                <p>The Kitchens featured in this gallery involve the collaboration of Solid Solutions Design LLC and
-                Joshua Cabinetry.</p>
+                <h3>Mall Kiosks</h3>
+                <p>The Kiosks featured in this gallery involve the collaboration of Solid Solutions Design LLC and
+                Spectrum Design Associates.</p>
+                
                 <!-- Projects Row Ulhmann-->
-        <div class="row">
-            <div class="col-md-3 img-portfolio">
-                    <%= link_to image_tag("rgallery/kitchens/Ulhmann_kitchen750x500(1).png",:class => 'img-responsive img-portfolio img-hover', :size => '750x450') %>
-                </a>
-            </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <%= link_to image_tag("rgallery/kitchens/Ulhmann_kitchen750x500(2).png",:class => 'img-responsive img-portfolio img-hover', :size => '750x450') %>
-                </a>
-            </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <%= link_to image_tag("rgallery/kitchens/Ulhmann_kitchen750x500(3).png",:class => 'img-responsive img-portfolio img-hover', :size => '750x450') %>
-                </a>
-            </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <%= link_to image_tag("rgallery/kitchens/Ulhmann_kitchen750x500(4).png",:class => 'img-responsive img-portfolio img-hover', :size => '750x450') %>
-                </a>
-            </div>
-        </div>
-        <!-- Projects Row rkitchen-->
-        <div class="row">
-            <div class="col-md-3 img-portfolio">
-                    <%= link_to image_tag("rgallery/kitchens/rkitchen(1).png",:class => 'img-responsive img-portfolio img-hover', :size => '750x450') %>
-                </a>
-            </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <%= link_to image_tag("rgallery/kitchens/rkitchen(2).png",:class => 'img-responsive img-portfolio img-hover', :size => '750x450') %>
-                </a>
-            </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <%= link_to image_tag("rgallery/kitchens/rkitchen(3).png",:class => 'img-responsive img-portfolio img-hover', :size => '750x450') %>
-                </a>
-            </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <%= link_to image_tag("rgallery/kitchens/rkitchen(4).png",:class => 'img-responsive img-portfolio img-hover', :size => '750x450') %>
-                </a>
-            </div>
-        </div>
-                <h3>Project Details</h3>
-                <ul>
-                    <li>Lorem Ipsum</li>
-                    <li>Dolor Sit Amet</li>
-                    <li>Consectetur</li>
-                    <li>Adipiscing Elit</li>
-                </ul>
-            </div>
+                <a data-target="#carousel-example-generic", data-slide-to="0"> <%= image_tag("rgallery/kitchens/Ulhmann_kitchen750x500(1).png", :size=> '75x50', :class => 'img-hover')%> </a>
+                <a data-target="#carousel-example-generic", data-slide-to="1"> <%= image_tag("rgallery/kitchens/Ulhmann_kitchen750x500(2).png", :size=> '75x50', :class => 'img-hover')%> </a>
+                <a data-target="#carousel-example-generic", data-slide-to="2"> <%= image_tag("rgallery/kitchens/Ulhmann_kitchen750x500(3).png", :size=> '75x50', :class => 'img-hover')%> </a>
+                <a data-target="#carousel-example-generic", data-slide-to="3"> <%= image_tag("rgallery/kitchens/Ulhmann_kitchen750x500(4).png", :size=> '75x50', :class => 'img-hover')%> </a>
+                <a data-target="#carousel-example-generic", data-slide-to="4"> <%= image_tag("rgallery/kitchens/rkitchen(1).png", :size=> '75x50', :class => 'img-hover') %> </a>
+                <a data-target="#carousel-example-generic", data-slide-to="5"> <%= image_tag("rgallery/kitchens/rkitchen(2).png", :size=> '75x50', :class => 'img-hover') %> </a>
+                <a data-target="#carousel-example-generic", data-slide-to="6"> <%= image_tag("rgallery/kitchens/rkitchen(3).png", :size=> '75x50', :class => 'img-hover') %> </a>
+                <a data-target="#carousel-example-generic", data-slide-to="7"> <%= image_tag("rgallery/kitchens/rkitchen(4).png", :size=> '75x50', :class => 'img-hover') %> </a>
+                
 
-        </div>
-        <!-- /.row -->
-
+        
         <!-- Related Projects Row -->
         <div class="row">
 

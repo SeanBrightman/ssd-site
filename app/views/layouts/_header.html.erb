@@ -14,26 +14,29 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-left">
                     <li>
-                        <%= link_to "SSD", root_path %>
+                        <%= link_to image_tag("ssdLogo1.png", :class => 'img-responsive', :size => '75x75'), root_path %>
+                        
                     </li>
+                <b>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <%= link_to "About", home_about_path %>
+                        <br><%= link_to "About", home_about_path %>
                     </li>
                     <li>
-                        <%= link_to "Services", home_services_path %>
+                        <br><%= link_to "Services", home_services_path %>
                     </li>
                     <li>
-                        <%= link_to "Products", home_progress_path %>
+                        <br><%= link_to "Products", home_progress_path %>
                     </li>
                     <li>
-                        <%= link_to "Gallery", home_gallery_path %>
+                        <br><%= link_to "Gallery", home_gallery_path %>
                     </li>
                     <li> 
-                        <%= link_to "Contact", home_contact_path %>
+                        <br><%= link_to "Contact", home_contact_path %>
                     </li>
                 </ul>
+                </b>
             </div>
             <!-- /.navbar-collapse -->
         </div>
